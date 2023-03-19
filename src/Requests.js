@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const KEY = "d4baa9e0a36c6bdd1fea28be6661d42e";
+const KEY = process.env.REACT_APP_KEY;
 
 const requests = {
   requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${KEY}&language=en-US&page=1`,

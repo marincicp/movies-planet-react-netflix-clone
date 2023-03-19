@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const KEY = process.env.KEY;
-
 const YT_KEY = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
@@ -10,7 +8,7 @@ const options = {
     part: "snippet,id",
   },
   headers: {
-    "X-RapidAPI-Key": "067679d704msh4b7a727b3b08c89p113ef6jsn989db0a3161b",
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
   },
 };
