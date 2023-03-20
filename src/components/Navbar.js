@@ -24,7 +24,7 @@ function Navbar() {
       </Link>
 
       {user?.email ? (
-        <div className="flex w-[130px] sm:w-fit flex-col sm:flex-row gap-3 ">
+        <div className="flex w-[130px] sm:w-fit flex-col sm:flex-row gap-3">
           <Link to="/account">
             {" "}
             <button className="text-white w-full px-4 py-2 bg-black/40 transition-all duration-150 hover:bg-black/60 text-m md:text-xl mr-6">

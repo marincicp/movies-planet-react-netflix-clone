@@ -20,23 +20,23 @@ function Login() {
   };
 
   return (
-    <div className="w-full h-full ">
+    <div className="w-screen h-screen overflow-hidden">
       <img
         className="hidden sm:block absolute w-full h-full object-cover"
         src="https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
         alt="/"
       />
 
-      <div
-        className="fixed w-full h-full top-0 left-0 bg-gradient-to-r from-black/60
-          "
-      ></div>
+      <div className="fixed w-full h-full mx-auto top-0 left-0 bg-gradient-to-r from-black/60"></div>
 
-      <div className="relative w-[600px] h-[700px] top-[200px] mx-auto text-white bg-black/90">
-        <div className="w-[400px]  py-20 mx-auto">
+      <div className="relative w-full md:w-[600px] h-full md:h-[700px] top-[200px] mx-auto    text-white bg-black/90">
+        <div className="w-full sm:w-[400px] py-20 mx-auto ">
           <h1 className="text-5xl font-bold mb-10 ">Sign In</h1>
 
-          <form onSubmit={handleLogin} className="w-full flex flex-col gap-8">
+          <form
+            onSubmit={handleLogin}
+            className="w-full px-2 flex flex-col gap-8 "
+          >
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}

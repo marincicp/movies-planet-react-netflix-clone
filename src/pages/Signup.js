@@ -33,10 +33,13 @@ function Signup() {
       "
       ></div>
 
-      <div className="relative w-[600px] h-[700px] top-[200px] mx-auto text-white bg-black/90">
-        <div className="w-[400px]  py-20 mx-auto">
+      <div className="relative w-full md:w-[600px] h-[700px] top-[200px] mx-auto text-white bg-black/90">
+        <div className="w-full sm:w-[400px]  py-20 mx-auto">
           <h1 className="text-5xl font-bold mb-10 ">Sign Up</h1>
-          <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full px-2 flex flex-col gap-8"
+          >
             <input
               className="w-full py-4 px-6 bg-gray-700 text-gray-400 text-xl outline-none"
               placeholder="Email"
